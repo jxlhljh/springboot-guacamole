@@ -59,7 +59,7 @@ public class WebSocketTunnel extends GuacamoleWebSocketTunnelEndpoint {
         information.setOptimalScreenHeight(height);
         information.setOptimalScreenWidth(width);
         //guacamole server地址 r端口
-        String hostname = "192.168.56.101";
+        String hostname = "127.0.0.1";
         int port = 4822;
         
         //--------------------------ssh连接测试--------------------------
@@ -76,10 +76,10 @@ public class WebSocketTunnel extends GuacamoleWebSocketTunnelEndpoint {
         GuacamoleConfiguration configuration = new GuacamoleConfiguration();
         configuration.setProtocol("rdp");
         // 远程windows服务的地址
-        configuration.setParameter("hostname", "192.168.56.1");
-        configuration.setParameter("port", "4389");
-        configuration.setParameter("username", "ljh");
-        configuration.setParameter("password", "123456");
+        configuration.setParameter("hostname", "172.168.201.11");
+        configuration.setParameter("port", "3389");
+        configuration.setParameter("username", "testuser");
+        configuration.setParameter("password", "11234");
         configuration.setParameter("ignore-cert", "true");
 
 
